@@ -42,8 +42,17 @@ This project is for an e-commerce website built using React and JavaScript, with
 
 ## Tech Stack
 
-React, Commerce.js, Material-UI, Stripe
+React, Express, Stripe,
+
+Possible: Tailwind, Vite
+
 
 ## Lessons Learned
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+To start with, I used dummyjson to obtain base product data from an API with the intention of incorporating a different option, such as Shopify, later on. I established the components with the correct routes.
+
+As I moved on to incorporate basic checkout features with Stripe, I took some time to learn the basics of Express and its use case for cross/same origin. During this time, React.dev was released and CRA became less relevant. This presented a good opportunity for me to learn an alternative.
+
+I researched the concepts of Vite and Next. Since I had already invested time in learning Express, I dont think I require the functionality of a backend with Nextjs. So my goal now is to learn Vite, which is lightweight yet fast. But before this, I will be working in the functionality of stripe checkouts with existing app thus far, incorporate vite, and create the frontend. 
