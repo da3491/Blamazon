@@ -30,8 +30,8 @@ app.post("/charge", async (req, res) => {
         quantity: item.quantity,
       })),
       //   These will change to SERVER_URL if they are on same url
-      success_url: `${process.env.VITE_CLIENT_URL}/success`,
-      cancel_url: `${process.env.VITE_CLIENT_URL}/cancel`,
+      success_url: `${process.env.VITE_CLIENT_URL}/payment_success`,
+      cancel_url: `${process.env.VITE_CLIENT_URL}/payment_cancel`,
     });
     res.json({ url: session.url });
   } catch (e) {

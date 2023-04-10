@@ -1,6 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import Login from "../components/account/LoginButton";
 import { MdEdit } from "react-icons/Md";
+import Login from "../components/account/LoginButton";
 
 const Account = () => {
   const { user, isAuthenticated, isLoading, logout } = useAuth0();
@@ -19,16 +19,18 @@ const Account = () => {
 
   return (
     isAuthenticated && (
-      <div className="flex flex-col justify-center items-center gap-4">
+      <div className="flex flex-col justify-center items-center gap-4 my-10">
         <h2 className="text-3xl">Manage your Profile</h2>
         <button
+          className="bg-yellow-400 px-3 rounded"
           onClick={() =>
             logout({ logoutParams: { returnTo: window.location.origin } })
           }
         >
           Logout
         </button>
-        <div className="rounded-md p-4 bg-white w-1/2">
+        {/* Section 1 */}
+        <div className="rounded-md p-4 bg-white w-1/2 border border-gray-200">
           <div className="flex justify-between">
             <h3 className="text-2xl font-bold">Account Information</h3>
             <button>
@@ -40,7 +42,8 @@ const Account = () => {
           <div>Location: {user.locale}</div>
           <div>Shipping Address: 4242 Amazon Ln, CA 55555</div>
         </div>
-        <div className="rounded-md p-4 bg-white w-1/2">
+        {/* Section 2 */}
+        <div className="rounded-md p-4 bg-white w-1/2 border border-gray-200">
           <div className="flex justify-between">
             <h3 className="text-2xl font-bold">Billing Information</h3>
             <button>
