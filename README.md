@@ -1,58 +1,51 @@
-# Project Title
 
-This project is for an e-commerce website built using React and JavaScript, with the intention of learning and incorporating new technologies such as Tailwind and Shopify. The main features of the e-commerce site will include:
+## Blamazon (Amazon clone)
+
+Welcome to my e-commerce project, which is a This is a clone of Amazon, created as a personal project to learn new packages (Tailwind, Vite, Express, Stripe) and showcase my skills in API usage, Context, Authorization, and Online Purchases. It took around a month to complete the MVP, with roughly 20 hours of work per week.
+## Tech Stack
+- React
+- Tailwind
+- Vite
+- Express
+- Stripe
+- auth0
 
 ## Features
 
-**Utilize Commerce.js for Product Catalog**
+- Utilize API for Product Catalog
+- Filter by category
+- Express backend for Stripe payment processing
+- Location services
+- Shopping Cart functionality
+- Login authentication
 
-- ProductList: Renders products from product db
-- ProductCard: Renders item data for a single product
+## To Complete/Extra Features
 
-**Search and Filtering**
+Although this is a working MVP, there are still a number of things I would like to further develop and include.
 
-- SearchBar: Allows users to search for products
-- FilterBar: Allows users to filter results by certain criteria
+**Mobile responsiveness:**
+Yes I know, mobile first development. I felt comfortable in my abilities to create something responsive, but that was not the focus for this project.
 
-**Shopping Cart**
+**Better Home Promotions:**
+The layout for my Home page isn't exactly identical to Amazon, and as much as I want to make it exact, it is a good amount of time to replicate the adds and building a section of content with so much variation. I do see some merit in handling this much and knowing how to lazy load.
 
-- Cart: Displays the items in a users shopping cart
-- CartItem: Data for single item in cart
+**Search Bar:**
+The dummyjson api is acting as a placeholder until I use something a little more substantial. It's small enough of a db it isnt super necessary, but once I decide to move to something bigger and more complicated I will create this feature.
 
-**Authentication/Authorization**
-
-- User Login
-- Purchases
-
-**Payment Processing Through Stripe**
-
-- PaymentForm: Allows Users to enter their payment information
-- PaymentConfirmation: Confirms the payment for the user
-- OrderSummary: Displays summary of order including shipping/payment info
-
-**User Account**
-
-- LoginForm: Allows users to LoginForm
-- UserProfile: Displays users account information, including purchase history and order status
-
-**Order Management**
-
-- OrderList: Displays list of customer's orders
-- OrderDetails: Displays details of a single order, including items purchased and order status
-
-## Tech Stack
-
-React, Express, Stripe,
-
-Possible: Tailwind, Vite
-
+**Order Management:**
+This is an advanced feature that would take me some time to figure out how best to achieve. This is obviously an essential feature in any real commerce site, and I would like to include this.
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+I started my project with establishing the primary routes and my api endpoints to my API. I then implemented secure login with auth0.
 
-To start with, I used dummyjson to obtain base product data from an API with the intention of incorporating a different option, such as Shopify, later on. I established the components with the correct routes.
+As I moved on to incorporate basic checkout features with Stripe, I took some time to learn the basics of Express and its use case for cross/same origin. During this time, React.dev was released and CRA became less relevant. This presented a good opportunity for me to learn an alternative like Vite.
 
-As I moved on to incorporate basic checkout features with Stripe, I took some time to learn the basics of Express and its use case for cross/same origin. During this time, React.dev was released and CRA became less relevant. This presented a good opportunity for me to learn an alternative.
+I researched the concepts of Vite and Next. Since I had already invested time in learning Express, I wanted to pickup something lightweight and simple. I decided to learn Vite. 
 
-I researched the concepts of Vite and Next. Since I had already invested time in learning Express, I dont think I require the functionality of a backend with Nextjs. So my goal now is to learn Vite, which is lightweight yet fast. But before this, I will be working in the functionality of stripe checkouts with existing app thus far, incorporate vite, and create the frontend. 
+After a week or so learning how to use Vite with Express, I finally set up my Express server and got Stripe to accept payments and re-route to success/canceled payments.
+
+Having successfully implementing the basic essential features of my site, I began building out the front-end and styling it exactly like Amazon. This was actually a lot of fun, and I enjoyed the challenges of creating the Hero slider with the gradient, and the filtering dropdown next to the searchbar (I ended up using context API to achieve this).
+
+As I continued to build out the front end, I wanted to incorporate a few more features like location tracking, and displaying the users information in the nav to make it more personalized. With building more and more components, I did more code-splitting to organize everything semantically. This is a point of inexperience, and I'm sure the more I build out this application the better it can be arranged. 
+
