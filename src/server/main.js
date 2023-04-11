@@ -7,6 +7,8 @@ const ViteExpress = require("vite-express");
 const app = express();
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
+ViteExpress.config({ mode: "production" });
+
 app.use(cors());
 app.use(express.json());
 
