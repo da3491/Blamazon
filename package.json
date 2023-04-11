@@ -2,6 +2,7 @@
   "name": "vite-react-starter",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/Blamazon",
   "scripts": {
     "dev": "nodemon src/server/main.js -w src/server",
     "start": "NODE_ENV=production node src/server/main.js",
