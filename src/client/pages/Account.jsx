@@ -11,8 +11,10 @@ const Account = () => {
 
   if (!user) {
     return (
-      <div className="text-2xl">
-        Please <Login /> to access your account details
+      <div className="text-xl h-full flex items-center justify-center">
+        <div>
+          Please <Login className="inline" /> to access your account details
+        </div>
       </div>
     );
   }

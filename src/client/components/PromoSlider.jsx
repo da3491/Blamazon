@@ -5,9 +5,9 @@ const PromoSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const slides = [
-    "/src/client/assets/promo-img-stream.jpg",
+    "https://m.media-amazon.com/images/I/61-dHhKgW8L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/611Hit0i2SL._SX3000_.jpg",
-    "/src/client/assets/promo-img-devices.jpg",
+    "https://m.media-amazon.com/images/I/61i0wxZouCL._SX3000_.jpg",
   ];
 
   const nextSlide = () => {
@@ -20,13 +20,13 @@ const PromoSlider = () => {
 
   return (
     <div>
-      <div className="w-full h-80 relative">
+      <div className="w-full h-1/2 relative">
         <img
           src={slides[slideIndex]}
           alt="Promo Slide"
-          className="w-full h-full object-cover object-top "
+          className="w-full h-full"
         />
-        <div className="absolute mt-auto h-2/5 inset-0 bg-gradient-to-b from-transparent to-zinc-800"></div>
+        <div className="absolute mt-auto h-2/5 inset-0 bg-gradient-to-b from-transparent to-gray-200"></div>
       </div>
       <div className="focus:border-2 focus:border-orange-400 focus:rounded">
         <button

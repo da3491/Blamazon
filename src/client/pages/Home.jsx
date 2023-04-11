@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <div className="bg-gray-200 relative max-w-screen-2xl mx-auto">
       <PromoSlider />
-      <div className="w-full h-72 bg-gradient-to-b from-zinc-800 to-transparent"></div>
-      <div className="relative z-10 -mt-96">
+      {/* <div className="w-full h-72 bg-gradient-to-b from-zinc-800 to-transparent"></div> */}
+      <div className="relative z-10 -mt-64">
         <ProductList products={products} />
         {/* <div>
           <div className="grid grid-cols-4 grid-rows-2 gap-5 m-5">

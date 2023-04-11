@@ -2,12 +2,9 @@
   "name": "vite-react-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Blamazon",
   "scripts": {
     "dev": "nodemon src/server/main.js -w src/server",
-    "start": "NODE_ENV=production node src/server/main.js",
-    "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "start": "NODE_ENV=production node src/server/main.js"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",

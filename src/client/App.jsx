@@ -46,7 +46,7 @@ const App = () => {
     <Auth0ProviderContext>
       <CartContext>
         <ProductFilterContext>
-          <RouterProvider router={router} basename="/" />
+          <RouterProvider router={router} />
         </ProductFilterContext>
       </CartContext>
     </Auth0ProviderContext>

@@ -15,7 +15,7 @@ const Nav = () => {
   const { cartTotalItems } = useContext(CartContext);
 
   return (
-    <div className="w-full bg-gray-900 text-white p-3 flex items-end justify-center gap-6 leading-none">
+    <div className="w-full bg-gray-900 text-white p-1 px-3 flex items-center justify-center gap-6 leading-none">
       {/* Logo */}
       <Link to="/">
         <div className="text-2xl font-bold text-amber-500">Blamazon</div>

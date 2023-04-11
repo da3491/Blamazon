@@ -20,24 +20,24 @@ const ProductCard = ({ data }) => {
         {/* Ratings */}
         <div className="flex items-center gap-1">
           {data.rating}
-          <div className="flex text-orange-400">
+          <div className="flex text-amber-400">
             <BsStarFill />
             <BsStarFill />
             <BsStarFill />
             <BsStarFill />
             <BsStarHalf />
           </div>
-          <div>(1234)</div>
+          <div className="text-xs">1,234</div>
         </div>
         {/* Price */}
-        <span className="text-2xl">${data.price}</span>
+        <span className="text-xl font-bold">${data.price}</span>
         {/* Shipping */}
         <div className="text-sm">
-          FREE delivery <strong>Tomorrow, (Date)</strong>
+          FREE delivery <strong className="text-sky-500">Tomorrow</strong>
         </div>
         {/* Add to Cart */}
         <button
-          className="bg-orange-400 w-4/6 h-10 mx-auto rounded block mt-3"
+          className="bg-amber-500 w-4/6 h-10 mx-auto rounded block mt-3"
           onClick={() => addItemToCart(data)}
         >
           Add to cart
