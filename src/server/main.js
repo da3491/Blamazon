@@ -12,10 +12,6 @@ ViteExpress.config({ mode: "production" });
 app.use(cors());
 app.use(express.json());
 
-app.get("/hello", (req, res) => {
-  res.send("Hello Vite + React!");
-});
-
 app.post("/charge", async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
@@ -41,11 +37,6 @@ app.post("/charge", async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
-
-const storeItems = new Map([
-  [1, { priceInCents: 10000, name: "Learn React Today" }],
-  [2, { priceInCents: 20000, name: "Learn CSS Today" }],
-]);
 
 ViteExpress.listen(app, 3000, () =>
   console.log("Server is listening on port 3000...")

@@ -6,3 +6,4 @@ export default defineConfig({
   base: "/Blamazon/",
   plugins: [react()],
 });
+image.png;
