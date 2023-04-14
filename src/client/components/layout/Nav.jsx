@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 import { HiShoppingCart } from "react-icons/hi";
-import { MdOutlineLanguage } from "react-icons/Md";
+import { MdOutlineLanguage } from "react-icons/md";
 
 import { CartContext } from "../../ctx/CartProvider";
 
