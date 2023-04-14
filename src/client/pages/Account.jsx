@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { MdEdit } from "react-icons/Md";
+import { MdEdit } from "react-icons/md";
 import Login from "../components/account/LoginButton";
 
 const Account = () => {
